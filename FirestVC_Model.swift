@@ -18,10 +18,13 @@ class BannerImage: HandyJSON {
     var carSpan3:String?
     var carSpan4:String?
     var carSpan5:String?
-    required init(){}
+    required init(){
+        carId = nil
+    }
 }
 
 class BannerModel:  HandyJSON{
     var t:Array<BannerImage>?
-    required init(){}
+    required init(){
+    }
 }
