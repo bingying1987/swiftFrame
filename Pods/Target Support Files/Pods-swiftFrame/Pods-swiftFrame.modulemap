@@ -1,0 +1,6 @@
+framework module Pods_swiftFrame {
+  umbrella header "Pods-swiftFrame-umbrella.h"
+
+  export *
+  module * { export * }
+}
