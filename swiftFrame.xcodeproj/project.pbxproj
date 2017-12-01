@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040343EF1FD1723A00DE7202 /* NSString+MyString.m in Sources */ = {isa = PBXBuildFile; fileRef = 040343EE1FD1723A00DE7202 /* NSString+MyString.m */; };
+		040343F21FD1725400DE7202 /* TableSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 040343F01FD1725400DE7202 /* TableSort.m */; };
+		040343F41FD1727500DE7202 /* TableSort.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040343F31FD1727500DE7202 /* TableSort.xib */; };
+		040343F81FD1734300DE7202 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040343F71FD1734300DE7202 /* SecondVC.swift */; };
+		040343FB1FD174C500DE7202 /* NSDate+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 040343FA1FD174C500DE7202 /* NSDate+Convenience.m */; };
 		04049EC61FCD428400F099C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04049EC51FCD428400F099C9 /* AppDelegate.swift */; };
 		04049ECB1FCD428400F099C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04049EC91FCD428400F099C9 /* Main.storyboard */; };
 		04049ECD1FCD428400F099C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04049ECC1FCD428400F099C9 /* Assets.xcassets */; };
@@ -30,6 +35,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040343EC1FD1723900DE7202 /* swiftFrame-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swiftFrame-Bridging-Header.h"; sourceTree = "<group>"; };
+		040343ED1FD1723A00DE7202 /* NSString+MyString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MyString.h"; sourceTree = "<group>"; };
+		040343EE1FD1723A00DE7202 /* NSString+MyString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MyString.m"; sourceTree = "<group>"; };
+		040343F01FD1725400DE7202 /* TableSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableSort.m; sourceTree = "<group>"; };
+		040343F11FD1725400DE7202 /* TableSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableSort.h; sourceTree = "<group>"; };
+		040343F31FD1727500DE7202 /* TableSort.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableSort.xib; sourceTree = "<group>"; };
+		040343F71FD1734300DE7202 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		040343F91FD174C500DE7202 /* NSDate+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Convenience.h"; sourceTree = "<group>"; };
+		040343FA1FD174C500DE7202 /* NSDate+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Convenience.m"; sourceTree = "<group>"; };
+		040343FC1FD174E300DE7202 /* CommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
 		04049EC21FCD428400F099C9 /* swiftFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04049EC51FCD428400F099C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04049ECA1FCD428400F099C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,6 +83,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040343E51FD148D800DE7202 /* 中文索引可搜索table */ = {
+			isa = PBXGroup;
+			children = (
+				040343F11FD1725400DE7202 /* TableSort.h */,
+				040343F01FD1725400DE7202 /* TableSort.m */,
+				040343F31FD1727500DE7202 /* TableSort.xib */,
+			);
+			name = "中文索引可搜索table";
+			sourceTree = "<group>";
+		};
 		04049EB91FCD428400F099C9 = {
 			isa = PBXGroup;
 			children = (
@@ -127,9 +152,15 @@
 		04B506081FCD635D00C2B300 /* 扩展 */ = {
 			isa = PBXGroup;
 			children = (
+				040343FC1FD174E300DE7202 /* CommonDefine.h */,
+				040343ED1FD1723A00DE7202 /* NSString+MyString.h */,
+				040343EE1FD1723A00DE7202 /* NSString+MyString.m */,
+				040343F91FD174C500DE7202 /* NSDate+Convenience.h */,
+				040343FA1FD174C500DE7202 /* NSDate+Convenience.m */,
 				04B506091FCD63FB00C2B300 /* UIColor+MyColorCategory.swift */,
 				04B506111FCD6F5C00C2B300 /* UIDevice+MyModel.swift */,
 				04596CD41FCF98EF003EF21C /* MBProgressHUD+MyHUD.swift */,
+				040343EC1FD1723900DE7202 /* swiftFrame-Bridging-Header.h */,
 			);
 			name = "扩展";
 			sourceTree = "<group>";
@@ -156,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				04CCB4D91FCFC2280005DA41 /* FirestVC_VM.swift */,
+				040343F71FD1734300DE7202 /* SecondVC.swift */,
 			);
 			name = VM;
 			sourceTree = "<group>";
@@ -171,6 +203,7 @@
 		04F82AE41FCE5D9600054588 /* 通用控件 */ = {
 			isa = PBXGroup;
 			children = (
+				040343E51FD148D800DE7202 /* 中文索引可搜索table */,
 				04F82AE51FCE5DB400054588 /* 自动滑动可点击banner */,
 			);
 			name = "通用控件";
@@ -238,6 +271,7 @@
 					04049EC11FCD428400F099C9 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = Z78ADQB4F7;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -267,6 +301,7 @@
 			files = (
 				04049ED01FCD428400F099C9 /* LaunchScreen.storyboard in Resources */,
 				04F82AE71FCE5DDF00054588 /* MyScrollView.xib in Resources */,
+				040343F41FD1727500DE7202 /* TableSort.xib in Resources */,
 				04B5060E1FCD6CCD00C2B300 /* WelcomeImgs.bundle in Resources */,
 				04049ECD1FCD428400F099C9 /* Assets.xcassets in Resources */,
 				04049ECB1FCD428400F099C9 /* Main.storyboard in Resources */,
@@ -330,13 +365,17 @@
 			files = (
 				04B506121FCD6F5C00C2B300 /* UIDevice+MyModel.swift in Sources */,
 				040569C61FCF8CFF00408F12 /* NetMenager.swift in Sources */,
+				040343EF1FD1723A00DE7202 /* NSString+MyString.m in Sources */,
 				04B5060C1FCD673200C2B300 /* ButtomBarController.swift in Sources */,
+				040343FB1FD174C500DE7202 /* NSDate+Convenience.m in Sources */,
 				04B5060A1FCD63FB00C2B300 /* UIColor+MyColorCategory.swift in Sources */,
 				04CCB4DA1FCFC2280005DA41 /* FirestVC_VM.swift in Sources */,
+				040343F21FD1725400DE7202 /* TableSort.m in Sources */,
 				040569C41FCF87FD00408F12 /* ApiHelper.swift in Sources */,
 				04049EDB1FCD46F400F099C9 /* CommonDefine.swift in Sources */,
 				04B506101FCD6D4900C2B300 /* WelcomeVC.swift in Sources */,
 				04CCB4D41FCFC1AC0005DA41 /* FirestVC.swift in Sources */,
+				040343F81FD1734300DE7202 /* SecondVC.swift in Sources */,
 				04F82AE91FCE5E3E00054588 /* MyScrollView.swift in Sources */,
 				04049ED91FCD443400F099C9 /* BaseVC.swift in Sources */,
 				04596CD51FCF98EF003EF21C /* MBProgressHUD+MyHUD.swift in Sources */,
@@ -477,11 +516,14 @@
 			baseConfigurationReference = CA1FCFEE57B55D78D7A9D62F /* Pods-swiftFrame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = Z78ADQB4F7;
 				INFOPLIST_FILE = swiftFrame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yichen.swiftFrame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swiftFrame-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = $SRCROOT/Pods;
 			};
@@ -492,11 +534,13 @@
 			baseConfigurationReference = 770B2BD619EB79D448B74CA8 /* Pods-swiftFrame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = Z78ADQB4F7;
 				INFOPLIST_FILE = swiftFrame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yichen.swiftFrame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swiftFrame-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = $SRCROOT/Pods;
 			};
