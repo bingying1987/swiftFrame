@@ -7,16 +7,37 @@
 //
 
 import UIKit
-
+import Alamofire
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    let manager = NetworkReachabilityManager(host: "https://www.baidu.com")
+    
+    func startListeningNetwork()
+    {
+        manager!.listener = { (status) in
+            switch status {
+            case .notReachable:
+                D_DEBUG(message: "notReachble")
+                break
+            case .unknown:
+                D_DEBUG(message: "unKnown")
+                break;
+            case .reachable(.ethernetOrWiFi):
+                D_DEBUG(message: "ethernetOrWiFi")
+                break
+            case .reachable(.wwan):
+                D_DEBUG(message: "wwan")
+            }
+        }
+        manager!.startListening()
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        Thread .sleep(forTimeInterval: 2)
+        startListeningNetwork()
         return true
     }
 

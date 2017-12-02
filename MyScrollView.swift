@@ -146,6 +146,8 @@ class MyScrollView: UIView,UIScrollViewDelegate {
             pageControl.isHidden = false
             pageControl.numberOfPages = (m_dataArray?.count)!
             pageControl.currentPage = 0
+            m_scrollView.isPagingEnabled = true
+            m_scrollView.contentOffset = CGPoint(x: rc.size.width, y: 0)
             m_scrollView.isScrollEnabled = true
             m_scrollView.bounces = false
             m_eventTarget = eventTarget
@@ -305,6 +307,8 @@ class MyScrollView: UIView,UIScrollViewDelegate {
             pageControl.currentPage = 0
             m_scrollView.isScrollEnabled = true
             m_scrollView.bounces = false
+            m_scrollView.isPagingEnabled = true
+            m_scrollView.contentOffset = CGPoint(x: rc.size.width, y: 0)
             m_eventTarget = eventTarget
             pageControl.removeFromSuperview()
             self.addSubview(pageControl)
@@ -329,7 +333,7 @@ class MyScrollView: UIView,UIScrollViewDelegate {
             var point = self.m_scrollView.contentOffset
             point.x += self.m_scrollView.bounds.size.width
             self.m_scrollView.contentOffset = point
-            self.pageControl.currentPage = Int(point.x / self.m_scrollView.bounds.size.width)
+            self.pageControl.currentPage = Int(point.x / self.m_scrollView.bounds.size.width - 1)
         }) { (completion) in
             var point = self.m_scrollView.contentOffset
             if(point.x >= self.m_scrollView.bounds.size.width * CGFloat(self.imgCount + 1))

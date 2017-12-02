@@ -34,6 +34,7 @@ class FirstVC_VM {
     {
         return Single<Bool>.create(subscribe: { (single) -> Disposable in
             let strAdd = ApiHelper.getApiAddress(api: API_BANNER_HOME)
+            
             NetManager<BannerModel>.request(url: strAdd, method: .get, parameters: nil)
             {
                 [weak self](bsucess, strError, reData) in

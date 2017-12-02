@@ -20,6 +20,7 @@
 		04049EDB1FCD46F400F099C9 /* CommonDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04049EDA1FCD46F400F099C9 /* CommonDefine.swift */; };
 		040569C41FCF87FD00408F12 /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040569C31FCF87FD00408F12 /* ApiHelper.swift */; };
 		040569C61FCF8CFF00408F12 /* NetMenager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040569C51FCF8CFF00408F12 /* NetMenager.swift */; };
+		04252DEA1FD295ED00FF430C /* ThiredVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04252DE91FD295ED00FF430C /* ThiredVC.swift */; };
 		04596CD51FCF98EF003EF21C /* MBProgressHUD+MyHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04596CD41FCF98EF003EF21C /* MBProgressHUD+MyHUD.swift */; };
 		04B5060A1FCD63FB00C2B300 /* UIColor+MyColorCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B506091FCD63FB00C2B300 /* UIColor+MyColorCategory.swift */; };
 		04B5060C1FCD673200C2B300 /* ButtomBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5060B1FCD673200C2B300 /* ButtomBarController.swift */; };
@@ -29,6 +30,7 @@
 		04CCB4D41FCFC1AC0005DA41 /* FirestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCB4D31FCFC1AC0005DA41 /* FirestVC.swift */; };
 		04CCB4DA1FCFC2280005DA41 /* FirestVC_VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCB4D91FCFC2280005DA41 /* FirestVC_VM.swift */; };
 		04CCB4DC1FCFC39E0005DA41 /* FirestVC_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCB4DB1FCFC39E0005DA41 /* FirestVC_Model.swift */; };
+		04D3A8A71FD2A52B00D45FE8 /* MyPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3A8A61FD2A52B00D45FE8 /* MyPopView.swift */; };
 		04F82AE71FCE5DDF00054588 /* MyScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F82AE61FCE5DDF00054588 /* MyScrollView.xib */; };
 		04F82AE91FCE5E3E00054588 /* MyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F82AE81FCE5E3E00054588 /* MyScrollView.swift */; };
 		1BE7EBD85F88E22E736E4E55 /* Pods_swiftFrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFA1FB9FE54375910845385 /* Pods_swiftFrame.framework */; };
@@ -55,6 +57,7 @@
 		04049EDA1FCD46F400F099C9 /* CommonDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonDefine.swift; sourceTree = "<group>"; };
 		040569C31FCF87FD00408F12 /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
 		040569C51FCF8CFF00408F12 /* NetMenager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetMenager.swift; sourceTree = "<group>"; };
+		04252DE91FD295ED00FF430C /* ThiredVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThiredVC.swift; sourceTree = "<group>"; };
 		04596CD41FCF98EF003EF21C /* MBProgressHUD+MyHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MBProgressHUD+MyHUD.swift"; sourceTree = "<group>"; };
 		04B506091FCD63FB00C2B300 /* UIColor+MyColorCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+MyColorCategory.swift"; sourceTree = "<group>"; };
 		04B5060B1FCD673200C2B300 /* ButtomBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtomBarController.swift; sourceTree = "<group>"; };
@@ -64,6 +67,7 @@
 		04CCB4D31FCFC1AC0005DA41 /* FirestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestVC.swift; sourceTree = "<group>"; };
 		04CCB4D91FCFC2280005DA41 /* FirestVC_VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestVC_VM.swift; sourceTree = "<group>"; };
 		04CCB4DB1FCFC39E0005DA41 /* FirestVC_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestVC_Model.swift; sourceTree = "<group>"; };
+		04D3A8A61FD2A52B00D45FE8 /* MyPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPopView.swift; sourceTree = "<group>"; };
 		04F82AE61FCE5DDF00054588 /* MyScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyScrollView.xib; sourceTree = "<group>"; };
 		04F82AE81FCE5E3E00054588 /* MyScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyScrollView.swift; sourceTree = "<group>"; };
 		1EFA1FB9FE54375910845385 /* Pods_swiftFrame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftFrame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				04CCB4D31FCFC1AC0005DA41 /* FirestVC.swift */,
+				040343F71FD1734300DE7202 /* SecondVC.swift */,
+				04252DE91FD295ED00FF430C /* ThiredVC.swift */,
 			);
 			name = V;
 			sourceTree = "<group>";
@@ -187,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				04CCB4D91FCFC2280005DA41 /* FirestVC_VM.swift */,
-				040343F71FD1734300DE7202 /* SecondVC.swift */,
 			);
 			name = VM;
 			sourceTree = "<group>";
@@ -200,9 +205,18 @@
 			name = M;
 			sourceTree = "<group>";
 		};
+		04D3A8A51FD2A48E00D45FE8 /* 自己的弹出控件 */ = {
+			isa = PBXGroup;
+			children = (
+				04D3A8A61FD2A52B00D45FE8 /* MyPopView.swift */,
+			);
+			name = "自己的弹出控件";
+			sourceTree = "<group>";
+		};
 		04F82AE41FCE5D9600054588 /* 通用控件 */ = {
 			isa = PBXGroup;
 			children = (
+				04D3A8A51FD2A48E00D45FE8 /* 自己的弹出控件 */,
 				040343E51FD148D800DE7202 /* 中文索引可搜索table */,
 				04F82AE51FCE5DB400054588 /* 自动滑动可点击banner */,
 			);
@@ -364,10 +378,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B506121FCD6F5C00C2B300 /* UIDevice+MyModel.swift in Sources */,
+				04252DEA1FD295ED00FF430C /* ThiredVC.swift in Sources */,
 				040569C61FCF8CFF00408F12 /* NetMenager.swift in Sources */,
 				040343EF1FD1723A00DE7202 /* NSString+MyString.m in Sources */,
 				04B5060C1FCD673200C2B300 /* ButtomBarController.swift in Sources */,
 				040343FB1FD174C500DE7202 /* NSDate+Convenience.m in Sources */,
+				04D3A8A71FD2A52B00D45FE8 /* MyPopView.swift in Sources */,
 				04B5060A1FCD63FB00C2B300 /* UIColor+MyColorCategory.swift in Sources */,
 				04CCB4DA1FCFC2280005DA41 /* FirestVC_VM.swift in Sources */,
 				040343F21FD1725400DE7202 /* TableSort.m in Sources */,
