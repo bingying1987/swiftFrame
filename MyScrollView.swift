@@ -9,7 +9,7 @@
 import UIKit
 import Kingfisher
 
-@IBDesignable
+
 class MyScrollView: UIView,UIScrollViewDelegate {
     private let idratio = "subheight"
     @IBOutlet weak var m_scrollView: UIScrollView!

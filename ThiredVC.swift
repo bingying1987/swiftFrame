@@ -18,11 +18,51 @@ class ThiredVC: BaseVC {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let view = UIView()
+        /*
+        let view = AlphaView()
         view.backgroundColor = UIColor.black
         popManager.shareInstance.showMessage(view: view)
+ */
+        
     }
 
+    @IBOutlet weak var btclick: UIButton!
+    
+    
+    @IBAction func clicked(_ sender: UIButton) {
+        let view = AlphaView()
+        view.frame = CGRect(x: 50, y: 0, width: 220, height: 180)
+        view.backgroundColor = UIColor.black
+        //这样可以把nav和tabbar 都弄进去 good
+//        let toview1 = UIApplication.shared.keyWindow?.rootViewController?.view
+        let toview1 = UIApplication.shared.keyWindow
+        popManager.shareInstance.showViewJD(view: view, toView: (toview1)!, banimate: true, vc: self)
+    }
+    
+    @IBOutlet weak var tuisongClick: UIButton!
+    
+    @IBAction func tuisongClicked(_ sender: UIButton) {
+        let view = AlphaView()
+        view.backgroundColor = UIColor.white
+        popManager.shareInstance.showMessage(view: view)
+    }
+    
+    @IBOutlet weak var popcenter: UIButton!
+    
+    @IBAction func popcenterClick(_ sender: UIButton) {
+        let view = AlphaView()
+        view.frame = CGRect(x: 0, y: 0, width: 220, height: 180)
+        view.backgroundColor = UIColor.black
+        popManager.shareInstance.popViewCenter(view: view, banimate: true)
+    }
+    
+    @IBAction func popbottom(_ sender: UIButton) {
+        let view = AlphaView()
+        view.frame = CGRect(x: 0, y: 0, width: 220, height: 180)
+        view.backgroundColor = UIColor.black
+        popManager.shareInstance.popCenterFromBottom(view: view, banimate: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

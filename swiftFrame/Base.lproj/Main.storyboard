@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9r0-aX-uvx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zbk-s6-Pzo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -170,30 +170,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iphone5-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="1DJ-YU-ffP" customClass="AnimatableImageView" customModule="IBAnimatable">
-                                <rect key="frame" x="80" y="186" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autoRun" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lP9-E0-oFb">
+                                <rect key="frame" x="0.0" y="64" width="94" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="clT-u3-hGc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="94" id="iXB-sL-1PP"/>
+                                </constraints>
+                                <state key="normal" title="仿京东样式"/>
+                                <connections>
+                                    <action selector="clicked:" destination="nIT-gc-110" eventType="touchUpInside" id="XgN-Pi-zvo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAp-U5-xn0">
+                                <rect key="frame" x="9" y="102" width="77" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uf9-NL-lUy"/>
+                                </constraints>
+                                <state key="normal" title="仿推送样式"/>
+                                <connections>
+                                    <action selector="tuisongClicked:" destination="nIT-gc-110" eventType="touchUpInside" id="Nz2-Rb-ykC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tt4-hr-TwY">
+                                <rect key="frame" x="9" y="156" width="62" height="30"/>
+                                <state key="normal" title="中间弹出"/>
+                                <connections>
+                                    <action selector="popcenterClick:" destination="nIT-gc-110" eventType="touchUpInside" id="8bI-PK-ew3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFN-6A-xMk">
+                                <rect key="frame" x="9" y="215" width="96" height="30"/>
+                                <state key="normal" title="中间弹出 底部"/>
+                                <connections>
+                                    <action selector="popbottom:" destination="nIT-gc-110" eventType="touchUpInside" id="lpb-yn-yfg"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.033823119470000003" blue="0.037010087660000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DAp-U5-xn0" firstAttribute="leading" secondItem="P3b-wC-56q" secondAttribute="leadingMargin" constant="-7" id="DfW-uf-oNN"/>
+                            <constraint firstItem="lP9-E0-oFb" firstAttribute="top" secondItem="P3b-wC-56q" secondAttribute="top" constant="64" id="HuR-tp-KfO"/>
+                            <constraint firstItem="lP9-E0-oFb" firstAttribute="leading" secondItem="P3b-wC-56q" secondAttribute="leading" id="KsD-Kz-gDN"/>
+                            <constraint firstItem="TFN-6A-xMk" firstAttribute="leading" secondItem="Tt4-hr-TwY" secondAttribute="leading" id="Lwd-oF-OxF"/>
+                            <constraint firstItem="DAp-U5-xn0" firstAttribute="top" secondItem="lP9-E0-oFb" secondAttribute="bottom" constant="8" id="YMb-dp-DX2"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lP9-E0-oFb" secondAttribute="trailing" constant="20" symbolic="YES" id="gFt-Y9-dqP"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DAp-U5-xn0" secondAttribute="trailingMargin" id="gtJ-ke-Huz"/>
+                            <constraint firstItem="TFN-6A-xMk" firstAttribute="top" secondItem="Tt4-hr-TwY" secondAttribute="bottom" constant="29" id="lGL-qC-3KL"/>
+                            <constraint firstItem="Tt4-hr-TwY" firstAttribute="leading" secondItem="DAp-U5-xn0" secondAttribute="leading" id="nlI-Kf-td9"/>
+                            <constraint firstItem="Tt4-hr-TwY" firstAttribute="top" secondItem="DAp-U5-xn0" secondAttribute="bottom" constant="24" id="siE-Rk-7pn"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="a4s-qF-hCL"/>
+                    <connections>
+                        <outlet property="btclick" destination="lP9-E0-oFb" id="tWo-15-34T"/>
+                        <outlet property="popcenter" destination="Tt4-hr-TwY" id="1mO-CW-y3T"/>
+                        <outlet property="tuisongClick" destination="DAp-U5-xn0" id="VYw-AS-XnX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eRi-YI-uLQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-29" y="1524"/>
+            <point key="canvasLocation" x="-29.600000000000001" y="1523.3883058470765"/>
         </scene>
         <!--SecondVC-->
         <scene sceneID="Vmu-gq-mkE">
@@ -230,7 +266,4 @@
             <point key="canvasLocation" x="894" y="842"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="iphone5-1.png" width="320" height="568"/>
-    </resources>
 </document>
