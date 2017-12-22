@@ -7,9 +7,10 @@
 //
 
 import UIKit
-
+import RxSwift
+import RxCocoa
 class ThiredVC: BaseVC {
-
+    let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -50,9 +51,20 @@ class ThiredVC: BaseVC {
     @IBOutlet weak var popcenter: UIButton!
     
     @IBAction func popcenterClick(_ sender: UIButton) {
-        let view = AlphaView()
+//        let view = AlphaView()
+        let view = tstView()
         view.frame = CGRect(x: 0, y: 0, width: 220, height: 180)
         view.backgroundColor = UIColor.black
+        /*
+        view.btone.rx.controlEvent([.touchUpInside]).asObservable().subscribe(onNext: { [weak view] in
+            D_DEBUG(message: "111")
+            view?.btone.setTitle("111", for: UIControlState.normal)
+        }).disposed(by: disposeBag)
+ */
+        view.btone.rx.tap.asObservable().subscribe(onNext: {
+            [weak view] in
+            view?.btone.setTitle("111", for: .normal)
+        }).disposed(by: disposeBag)
         popManager.shareInstance.popViewCenter(view: view, banimate: true)
     }
     

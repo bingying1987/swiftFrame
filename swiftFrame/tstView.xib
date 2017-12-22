@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="tstView" customModule="swiftFrame" customModuleProvider="target">
+            <connections>
+                <outlet property="btone" destination="i2D-Pp-QdV" id="7X6-CQ-fwK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="245"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2D-Pp-QdV">
+                    <rect key="frame" x="151" y="48" width="52" height="30"/>
+                    <state key="normal" title="Button1"/>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDT-zT-oIl">
+                    <rect key="frame" x="149.5" y="160" width="55" height="30"/>
+                    <state key="normal" title="Button2"/>
+                    <connections>
+                        <action selector="btClick:" destination="-1" eventType="touchUpInside" id="cXB-rY-3y8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LDT-zT-oIl" firstAttribute="top" secondItem="i2D-Pp-QdV" secondAttribute="bottom" constant="82" id="2Jf-D3-ip0"/>
+                <constraint firstItem="LDT-zT-oIl" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="IHM-cq-OAd"/>
+                <constraint firstItem="i2D-Pp-QdV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="48" id="bdN-jp-HCF"/>
+                <constraint firstItem="i2D-Pp-QdV" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="k0M-Yi-1A3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="79" y="-112.5"/>
+        </view>
+    </objects>
+</document>

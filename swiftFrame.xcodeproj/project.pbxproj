@@ -27,6 +27,8 @@
 		04B5060E1FCD6CCD00C2B300 /* WelcomeImgs.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04B5060D1FCD6CCD00C2B300 /* WelcomeImgs.bundle */; };
 		04B506101FCD6D4900C2B300 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B5060F1FCD6D4900C2B300 /* WelcomeVC.swift */; };
 		04B506121FCD6F5C00C2B300 /* UIDevice+MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B506111FCD6F5C00C2B300 /* UIDevice+MyModel.swift */; };
+		04B8CA9A1FDA5BE00084E5A6 /* tstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B8CA991FDA5BE00084E5A6 /* tstView.xib */; };
+		04B8CA9C1FDA5BFE0084E5A6 /* tstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8CA9B1FDA5BFE0084E5A6 /* tstView.swift */; };
 		04CCB4D41FCFC1AC0005DA41 /* FirestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCB4D31FCFC1AC0005DA41 /* FirestVC.swift */; };
 		04CCB4DA1FCFC2280005DA41 /* FirestVC_VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCB4D91FCFC2280005DA41 /* FirestVC_VM.swift */; };
 		04CCB4DC1FCFC39E0005DA41 /* FirestVC_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCB4DB1FCFC39E0005DA41 /* FirestVC_Model.swift */; };
@@ -64,6 +66,8 @@
 		04B5060D1FCD6CCD00C2B300 /* WelcomeImgs.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WelcomeImgs.bundle; sourceTree = "<group>"; };
 		04B5060F1FCD6D4900C2B300 /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		04B506111FCD6F5C00C2B300 /* UIDevice+MyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+MyModel.swift"; sourceTree = "<group>"; };
+		04B8CA991FDA5BE00084E5A6 /* tstView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tstView.xib; sourceTree = "<group>"; };
+		04B8CA9B1FDA5BFE0084E5A6 /* tstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tstView.swift; sourceTree = "<group>"; };
 		04CCB4D31FCFC1AC0005DA41 /* FirestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestVC.swift; sourceTree = "<group>"; };
 		04CCB4D91FCFC2280005DA41 /* FirestVC_VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestVC_VM.swift; sourceTree = "<group>"; };
 		04CCB4DB1FCFC39E0005DA41 /* FirestVC_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestVC_Model.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 			children = (
 				04049EC51FCD428400F099C9 /* AppDelegate.swift */,
 				04049EC91FCD428400F099C9 /* Main.storyboard */,
+				04B8CA991FDA5BE00084E5A6 /* tstView.xib */,
+				04B8CA9B1FDA5BFE0084E5A6 /* tstView.swift */,
 				04049ECC1FCD428400F099C9 /* Assets.xcassets */,
 				04049ECE1FCD428400F099C9 /* LaunchScreen.storyboard */,
 				04049ED11FCD428400F099C9 /* Info.plist */,
@@ -315,6 +321,7 @@
 			files = (
 				04049ED01FCD428400F099C9 /* LaunchScreen.storyboard in Resources */,
 				04F82AE71FCE5DDF00054588 /* MyScrollView.xib in Resources */,
+				04B8CA9A1FDA5BE00084E5A6 /* tstView.xib in Resources */,
 				040343F41FD1727500DE7202 /* TableSort.xib in Resources */,
 				04B5060E1FCD6CCD00C2B300 /* WelcomeImgs.bundle in Resources */,
 				04049ECD1FCD428400F099C9 /* Assets.xcassets in Resources */,
@@ -386,6 +393,7 @@
 				04D3A8A71FD2A52B00D45FE8 /* MyPopView.swift in Sources */,
 				04B5060A1FCD63FB00C2B300 /* UIColor+MyColorCategory.swift in Sources */,
 				04CCB4DA1FCFC2280005DA41 /* FirestVC_VM.swift in Sources */,
+				04B8CA9C1FDA5BFE0084E5A6 /* tstView.swift in Sources */,
 				040343F21FD1725400DE7202 /* TableSort.m in Sources */,
 				040569C41FCF87FD00408F12 /* ApiHelper.swift in Sources */,
 				04049EDB1FCD46F400F099C9 /* CommonDefine.swift in Sources */,

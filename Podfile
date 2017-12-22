@@ -14,4 +14,5 @@ target 'swiftFrame' do
   pod 'Alamofire','~>4.5.1'
   pod 'HandyJSON'
   pod 'MBProgressHUD','~>1.1.0'
+  pod 'RxCocoa'
 end
