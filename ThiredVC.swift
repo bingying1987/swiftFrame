@@ -61,7 +61,7 @@ class ThiredVC: BaseVC {
             view?.btone.setTitle("111", for: UIControlState.normal)
         }).disposed(by: disposeBag)
  */
-        view.btone.rx.tap.asObservable().subscribe(onNext: {
+        view.btone.rx.tap.subscribe(onNext: {
             [weak view] in
             view?.btone.setTitle("111", for: .normal)
         }).disposed(by: disposeBag)

@@ -15,4 +15,5 @@ target 'swiftFrame' do
   pod 'HandyJSON'
   pod 'MBProgressHUD','~>1.1.0'
   pod 'RxCocoa'
+  pod 'RxDataSources'
 end
